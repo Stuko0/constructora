@@ -8,3 +8,4 @@
 <x-backpack::menu-item title="Tasks" icon="la la-question" :link="backpack_url('task')" />
 <x-backpack::menu-item title="Task resources" icon="la la-question" :link="backpack_url('task-resource')" />
 <x-backpack::menu-item title="Users" icon="la la-question" :link="backpack_url('user')" />
+<x-backpack::menu-item title="Comments" icon="la la-question" :link="backpack_url('comment')" />

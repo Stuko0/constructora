@@ -22,6 +22,8 @@ Route::group([
     Route::crud('task', 'TaskCrudController');
     Route::crud('task-resource', 'TaskResourceCrudController');
     Route::crud('user', 'UserCrudController');
+    Route::crud('comment', 'CommentCrudController');
+
 }); // this should be the absolute last line of this file
 
 /**
