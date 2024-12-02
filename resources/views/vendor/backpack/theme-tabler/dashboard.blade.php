@@ -51,8 +51,8 @@
                 ->progressClass('progress-bar')
                 ->value(number_format($totalEarnings, 2) . '$')
                 ->description('Ganancias')
-                ->progress((100 * $totalEarnings) / 10000)
-                ->hint(10000 - $totalEarnings . ' meta de ganancias anual'),
+                ->progress((100 * $totalEarnings) / 100000000)
+                ->hint(100000000 - $totalEarnings . ' meta de ganancias anual'),
         ]);
 @endphp
 

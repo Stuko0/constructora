@@ -39,11 +39,16 @@ class CommentCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        CRUD::setFromDb(); // set columns from db columns.
+        // CRUD::setFromDb(); // set columns from db columns.
         CRUD::column('created_by')->wrapper([
             'href'=>function($crud, $column, $entry){
                 return backpack_url('user/' . $entry->id. '/show');
             }
+        ]);
+        CRUD::addColumn([ 
+            'name' => 'content',
+            'type' => 'text',
+            'label' => 'Content',
         ]);
         CRUD::column('resource_id')->wrapper([
             'href'=>function($crud, $column, $entry){

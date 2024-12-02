@@ -45,7 +45,8 @@ class ResourceCrudController extends CrudController
             'type' => 'number',
             'label' => 'Total', 
             'suffix' => 'Bs', 
-        ]);CRUD::addColumn([ 
+        ]);
+        CRUD::addColumn([ 
             'name' => 'stock',
             'type' => 'number',
             'label' => 'Stock', 
