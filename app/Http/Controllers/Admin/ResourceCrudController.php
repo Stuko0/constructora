@@ -45,6 +45,11 @@ class ResourceCrudController extends CrudController
             'type' => 'number',
             'label' => 'Total', 
             'suffix' => 'Bs', 
+        ]);CRUD::addColumn([ 
+            'name' => 'stock',
+            'type' => 'number',
+            'label' => 'Stock', 
+            'suffix' => 'units', 
         ]);
         /**
          * Columns can be defined using the fluent syntax:
@@ -62,7 +67,6 @@ class ResourceCrudController extends CrudController
     {
         CRUD::setValidation(ResourceRequest::class);
         CRUD::setFromDb(); // set fields from db columns.
-        CRUD::addField([ 'name' => 'total', 'type' => 'number', 'label' => 'Total', 'attributes' => ['readonly' => 'readonly'],'value' => function ($entry) { return $entry->total;} ]);
 
         /**
          * Fields can be defined using the fluent syntax:

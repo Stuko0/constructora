@@ -21,7 +21,7 @@ class Resource extends Model
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     protected $guarded = ['id'];
-    protected $fillable = ['type', 'name', 'description', 'cost_per_unit', 'quantity', 'availability'];
+    protected $fillable = ['type', 'name', 'description', 'cost_per_unit', 'quantity', 'availability', 'stock'];
     // protected $hidden = [];
 
     /*

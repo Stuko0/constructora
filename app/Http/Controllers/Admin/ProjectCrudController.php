@@ -55,6 +55,7 @@ class ProjectCrudController extends CrudController
                 };
             }
         ]);
+        CRUD::column('name')->label('CLIENT NAME');
         /**
          * Columns can be defined using the fluent syntax:
          * - CRUD::column('price')->type('number');

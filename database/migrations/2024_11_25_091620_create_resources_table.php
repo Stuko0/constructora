@@ -19,6 +19,7 @@ return new class extends Migration
             $table->decimal('cost_per_unit', 10, 2);
             $table->integer('quantity')->default(0);
             $table->decimal('total', 10, 2)->default(0);
+            $table->integer('stock')->default(0);
             $table->string('availability')->default('Available');
             $table->timestamps();
         });
